@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Details for commit</title>
+        <link rel="stylesheet" href="../../css/GitX.css" type="text/css" media="screen" title="no title" charset="utf-8">
+            <script src="../../lib/GitX.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../../lib/md5.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../../lib/diffHighlighter.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../../lib/keyboardNavigation.js" type="text/javascript" charset="utf-8"></script>
+            
+            <link rel="stylesheet" href="branchlist.css" type="text/css" media="screen" title="no title" charset="utf-8">
+            <script src="branchlist.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    
+    <body>
+        <div id="notification" style="display:none;">
+            <img src="../../images/spinner.gif" alt="Spinner" id="spinner"></img>
+            <div id="notification_message"></div>
+        </div>
+        
+        <div id="debug"></div>
+        <div id="header">
+            <ul class="hotness-legend">
+                <li class="text">Recently Active</li>
+                <li class="hot"><span class="behind"></span><span class="ahead"></span></li>
+                <li class="fresh"><span class="behind"></span><span class="ahead"></span></li>
+                <li class="stale"><span class="behind"></span><span class="ahead"></span></li>
+                <li class="old"><span class="behind"></span><span class="ahead"></span></li>
+                <li class="text">Stale</li>
+            </ul>
+            <div id="againstinfo"></div>
+        </div>
+        <div id="branchlist">
+        </div>
+    </body>
+</html>

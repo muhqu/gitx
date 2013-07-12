@@ -1,0 +1,63 @@
+body{padding:0px;border:0px}
+#header{margin:0 0 10px 0;padding: 0 0 0 5px; border-bottom:1px solid #ddd;-webkit-box-shadow: 1px 1px 2px #DDD;} 
+#header h2 {margin:0; padding:0} 
+#header p {margin:2px 0; padding:0} 
+table.branches{margin:5px 0;width:100%;border-spacing:0;border-collapse:collapse;-webkit-box-shadow: 1px 1px 2px #DDD;}
+table.branches th{padding:2px 5px;font-size:11px;text-transform:uppercase;text-align:left;color:#666;border-bottom:1px solid #ddd;}
+table.branches th.state-widget{text-align:center;}
+table.branches tr td{padding:5px 0;border-bottom:1px solid #ddd;}
+table.branches tr:hover td{background:#fafafa;cursor:hand}
+table.branches tr td.state-widget{width:50%;}
+table.branches tr.base td{background:#333;color:#fff;}
+table.branches tr.base td.name{padding-left:10px;}
+table.branches tr.base td.name p{color:#aaa;}
+table.branches tr.base td.actions{padding-right:10px;color:#eee;}
+.branches .name h3{margin:0 0 0 5px;font-size:14px;}
+.branches .name p{margin:-3px 0 0 5px;font-size:11px;color:#666;}
+.branches .state{display:inline-block;margin-right:5px;padding:2px 5px;font-size:11px;text-transform:uppercase;font-weight:bold;background:#eee;-webkit-border-radius:2px;-moz-border-radius:2px;}
+.branches .state-progress{font-size:12px;color:#666;font-style:normal;}
+.branches ul.actions{float:right;}
+.branches ul.actions>li{list-style-type:none;display:inline-block;margin:0 0 0 5px;}
+.branches ul.actions>li.text{padding:5px 0;font-size:11px;font-weight:bold;}
+.diverge-widget{position:relative;height:35px;}
+.diverge-widget .ahead{display:block;position:absolute;width:50%;height:100%;left:50%;}
+.diverge-widget .behind{display:block;position:absolute;width:50%;height:100%;right:50%;}
+.diverge-widget .bar{position:absolute;top:13px;right:0;display:block;height:8px;background:#d0d0d0;}
+.diverge-widget .ahead .bar{background:#7a7a7a;left:0;}
+.diverge-widget.hot .bar{background-color:#ff704f;}
+.diverge-widget.hot .ahead .bar{background-color:#811201;}
+.diverge-widget.fresh .bar{background-color:#ffd266;}
+.diverge-widget.fresh .ahead .bar{background-color:#b69e67;}
+.diverge-widget.stale .bar{background-color:#b2d0dd;}
+.diverge-widget.stale .ahead .bar{background-color:#1e4152;}
+.diverge-widget em{font-style:normal;font-size:10px;line-height:10px;color:#999;white-space:nowrap;}
+.diverge-widget .behind em{position:absolute;bottom:0;right:5px;}
+.diverge-widget .ahead em{position:absolute;top:0;left:5px;}
+.diverge-widget .separator{display:block;position:absolute;top:0;left:50%;margin-left:-2px;width:2px;height:100%;background:#454545;}
+ul.hotness-legend{float:right;margin:10px 0 0 0;}
+ul.hotness-legend li{list-style-type:none;float:left;margin:0;font-size:11px;color:#999;}
+ul.hotness-legend .ahead,ul.hotness-legend .behind{display:block;margin:1px 0 0 0;width:15px;height:10px;}
+ul.hotness-legend .old .behind{background-color:#d0d0d0;}
+ul.hotness-legend .old .ahead{background-color:#7a7a7a;}
+ul.hotness-legend .stale .behind{background-color:#b2d0dd;}
+ul.hotness-legend .stale .ahead{background-color:#1e4152;}
+ul.hotness-legend .fresh .behind{background-color:#ffd266;}
+ul.hotness-legend .fresh .ahead{background-color:#b69e67;}
+ul.hotness-legend .hot .behind{background-color:#ff704f;}
+ul.hotness-legend .hot .ahead{background-color:#811201;}
+ul.hotness-legend li.text{margin:0 10px;height:23px;line-height:23px;}
+a.button{height:23px;padding:0 10px;line-height:23px;font-size:11px;font-weight:bold;color:#fff;text-shadow:-1px -1px 0 #333;-webkit-border-radius:3px;-moz-border-radius:3px;background:url(/images/modules/buttons/black.gif) 0 0 repeat-x;}
+a.button{-webkit-text-stroke:1px transparent;}
+@media only screen and(max-device-width:480px){a.button{-webkit-text-stroke:0 black;}
+}
+a.button:hover{background-position:0 -23px;text-decoration:none;}
+div.content{font-size:14px;color:#333;}
+.content h2{margin:40px 0 -10px 0;font-size:18px;color:#000;}
+.feature-content h2{margin:0 0 -10px 0;font-size:18px;}
+.content h2:first-child,.content .rule+h2{margin-top:0;}
+.content h3{color:#000;margin:1.5em 0 -0.5em 0;}
+.content h3:first-child{margin-top:5px;}
+.content .figure{margin:15px 0;padding:1px;border:1px solid #e5e5e5;}
+.content .figure:first-child{margin-top:0;}
+.content ul{margin:25px 0 25px 25px;}
+.content ul ul{margin-top:10px;margin-bottom:10px;}

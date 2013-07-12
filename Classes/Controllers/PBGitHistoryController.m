@@ -27,9 +27,6 @@
 #import "GLFileView.h"
 
 
-#define kHistorySelectedDetailIndexKey @"PBHistorySelectedDetailIndex"
-#define kHistoryDetailViewIndex 0
-#define kHistoryTreeViewIndex 1
 
 #define kHistorySplitViewPositionDefault @"History SplitView Position"
 
@@ -310,6 +307,8 @@
 		[menuItem setState:(self.selectedCommitDetailsIndex == kHistoryDetailViewIndex) ? NSOnState : NSOffState];
     } else if ([menuItem action] == @selector(setTreeView:)) {
 		[menuItem setState:(self.selectedCommitDetailsIndex == kHistoryTreeViewIndex) ? NSOnState : NSOffState];
+    } else if ([menuItem action] == @selector(setBranchView:)) {
+		[menuItem setState:(self.selectedCommitDetailsIndex == kHistoryBranchViewIndex) ? NSOnState : NSOffState];
     }
     return YES;
 }
@@ -323,6 +322,12 @@
 - (IBAction) setTreeView:(id)sender
 {
 	self.selectedCommitDetailsIndex = kHistoryTreeViewIndex;
+	forceSelectionUpdate = YES;
+}
+
+- (IBAction) setBranchView:(id)sender
+{
+	self.selectedCommitDetailsIndex = kHistoryBranchViewIndex;
 	forceSelectionUpdate = YES;
 }
 

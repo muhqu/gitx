@@ -32,7 +32,7 @@
 	}
 
 	if ([character isEqualToString:@" "]) {
-		if (controller.selectedCommitDetailsIndex == 0) {
+		if (controller.selectedCommitDetailsIndex == kHistoryDetailViewIndex) {
 			if ([event modifierFlags] & NSShiftKeyMask)
 				[webView scrollPageUp:self];
 			else

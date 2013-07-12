@@ -12,6 +12,13 @@
 #import "PBViewController.h"
 #import "PBCollapsibleSplitView.h"
 
+
+#define kHistorySelectedDetailIndexKey @"PBHistorySelectedDetailIndex"
+#define kHistoryDetailViewIndex 0
+#define kHistoryTreeViewIndex 1
+#define kHistoryBranchViewIndex 2
+
+
 @class PBGitSidebarController;
 @class PBWebHistoryController;
 @class PBGitGradientBarView;
@@ -66,6 +73,7 @@
 
 - (IBAction) setDetailedView:(id)sender;
 - (IBAction) setTreeView:(id)sender;
+- (IBAction) setBranchView:(id)sender;
 - (IBAction) setBranchFilter:(id)sender;
 
 - (void)selectCommit:(PBGitSHA *)commit;
