@@ -1,4 +1,5 @@
 ---
 prereleases: true
+layout: null
 ---
 {%include appcast.inc %}
